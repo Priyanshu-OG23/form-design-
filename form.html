@@ -32,11 +32,12 @@
             }
             .myform > div > input
             {
-                width: 475px;
+                width: 92%;
                 height: 38px;
                 border-radius: 20px;
+                padding-left:43px ;
                 display: block;
-                margin:7px auto;
+                margin:10px auto;
                 background-image: -webkit-linear-gradient(top, #b1b1b1,#d7d7d7);
                 border:none;
                 box-shadow: 0px 1px 1px 1px #5b595b ;
@@ -48,6 +49,74 @@
                 color: #ecf6ff;
 
             }
+            .inputbox{
+                /* padding-left : 20px;
+                padding-right: 20px; */
+                padding: 0px 20px;
+
+            }
+            .box > input :focus {
+                outline: none;
+
+            }
+            .tnc a{
+                color: #586400;
+
+            }
+
+            /* way to target using its attribute  */
+            /* this is called attribute selector  */
+
+            input[type="submit"]
+            {
+                display: block;
+                width: 248px;
+                height: 50px;
+                border-radius: 20px ;
+                /*  to remove the border which we get while hovering over the input  */
+                border: none;
+                background-image: -webkit-linear-gradient(top,#8b8e0d,#717c00);
+                
+                color: whitesmoke;
+                font-size: 1.4em;
+                /* margin-left: 249px; */
+                float: right;
+                margin-right: 20px;
+                text-shadow: 0px -2px 1px rgba(0,0,0, 0.5);
+                box-shadow: 0px -1px 0px  0px #b4bd2c;
+             
+
+
+            }
+            /* type of child 
+            1 :  first-child () used to select the first child 
+            2: last-child() used to select the last child 
+            3: nth-child() used to select multiple child at once 
+             */
+            .inputbox input:first-child{
+                background-image: url('./img/1.png'),-webkit-linear-gradient(top, #b1b1b1,#d7d7d7);
+                background-repeat: no-repeat,repeat;
+                background-position: 10px center;
+            }
+            .inputbox input:nth-child(2){
+                background-image: url('./img/2.png'),-webkit-linear-gradient(top, #b1b1b1,#d7d7d7);
+                background-repeat: no-repeat,repeat;
+                background-position: 10px center;
+
+            }
+            .inputbox input:nth-child(3){
+                background-image: url('./img/3.png'),-webkit-linear-gradient(top, #b1b1b1,#d7d7d7);
+                background-repeat: no-repeat,repeat;
+                background-position: 10px center;
+                
+            }
+            
+            .inputbox input:nth-child(4){
+                background-image: url('./img/4.png') ,-webkit-linear-gradient(top, #b1b1b1,#d7d7d7);
+                background-repeat: no-repeat,repeat;
+                background-position: 10px center;
+            }
+
 
             
 
@@ -57,15 +126,19 @@
     <body>
 
     
-        <form action="" method="post" class="myform" >
+        <form action=""  class="myform" >
             <div class="cacc">CREATE AN ACCOUNT </div>
-            <div>
-                    <input type="text" >
-                    <input type="number" >
-                    <input type="email" >
-                    <input type="password">
-                    <p class="tnc">I agree to terms and conditions and Privacy policy </p>
+            <div class="inputbox">
+                    <input type="text" name="username" value  placeholder="Name">
+                    <input type="number" name="phonenumber" value="" placeholder="Phone number">
+                    <input type="email" name="email" value=""  placeholder="Email">
+                    <input type="password" name="password" value="" placeholder="Password">
+                    <p class="tnc"> <input type="checkbox" name="tnc" value="agree">I agree to  <a href="#">terms and conditions</a> and 
+                    <a href="#">Privacy policy </a>
+                </p>
             </div>
+
+            <input type="submit" name="submit" value="Create Account ">
 
             
             
