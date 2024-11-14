@@ -1,0 +1,80 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>CSS FORM DESIGN </title>
+        <style>
+            .myform{
+                width: 520px;
+                height: 445px;
+                margin: 150px auto;
+                font-family: Arial, Helvetica, sans-serif;
+                /* linear gradient background-image:linear-gradient(direction, color-stop1 , color-stop2 ,..)
+                direction could be top bottom right and left 
+                if top is choosen then the color will be start from top and move to bottom 
+                if bottom is choosen then the color will start at bottom and move to top , */
+                /* IF IT DOES NOT WORK THEN TYPE   -webkit-linear-gradient() */
+                background-image: -webkit-linear-gradient(top,#3b3b3b ,#373737);
+                border-radius: 9px;
+            }
+            .myform > .cacc{
+                height: 77px;
+                text-align: center;
+                color: #ecf6ff;
+                line-height: 77px;
+                
+                font-size: 1.3em;
+
+                border-bottom:1px solid  #1c1c1c;
+                text-shadow:0px -1px 1px   rgba(0,0,0, 0.5);
+                margin-bottom: 41px;
+            }
+            .myform > div > input
+            {
+                width: 475px;
+                height: 38px;
+                border-radius: 20px;
+                display: block;
+                margin:7px auto;
+                background-image: -webkit-linear-gradient(top, #b1b1b1,#d7d7d7);
+                border:none;
+                box-shadow: 0px 1px 1px 1px #5b595b ;
+
+            }
+            .tnc{
+                font-size: 1em !important;
+                text-align:left !important;
+                color: #ecf6ff;
+
+            }
+
+            
+
+
+        </style>
+    </head>
+    <body>
+
+    
+        <form action="" method="post" class="myform" >
+            <div class="cacc">CREATE AN ACCOUNT </div>
+            <div>
+                    <input type="text" >
+                    <input type="number" >
+                    <input type="email" >
+                    <input type="password">
+                    <p class="tnc">I agree to terms and conditions and Privacy policy </p>
+            </div>
+
+            
+            
+
+
+        </form>
+
+        
+
+        
+    </body>
+    </html>
